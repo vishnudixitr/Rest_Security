@@ -27,12 +27,11 @@ public class SwaggerConfig {
                 .apiInfo(metaInfo());
     }
 
-    String result = "cat" + System.lineSeparator() + "dog";
     private ApiInfo metaInfo() {
 
         ApiInfo apiInfo = new ApiInfo(
                 "Documatation on Rest API",
-                "There are 3 API:GET POST and PUT",
+                "There are 3 API: for operating data using GET POST and PUT",
                 "1.0",
                 "Terms of Service",
                 new Contact("Vishnu dixit", "http://www.vsoft.co.in",

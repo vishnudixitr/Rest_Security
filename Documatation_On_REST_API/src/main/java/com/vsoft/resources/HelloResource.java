@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @Api(value = "HelloWorld Resource", description = "shows hello world")
 public class HelloResource {
 
-    @ApiOperation(value = "Returns Hello World")
+    @ApiOperation(value = "Welcome Message ")
     @ApiResponses(
             value = {
                     @ApiResponse(code = 100, message = "100 is the message"),
@@ -20,16 +20,16 @@ public class HelloResource {
     )
     @GetMapping
     public String hello() {
-        return "Hello World";
+        return "welcome to vsoft";
     }
 
-    @ApiOperation(value = "Returns Hello World")
+    @ApiOperation(value = "save the data ")
     @PostMapping("/post")
     public String helloPost(@RequestBody final String hello) {
         return hello;
     }
 
-    @ApiOperation(value = "Returns Hello World")
+    @ApiOperation(value = "Update the data")
     @PutMapping("/put")
     public String helloPut(@RequestBody final String hello) {
         return hello;
